@@ -2,7 +2,7 @@ package main.java.br.edu.iff.forca.domain.letra;
 
 public class LetraTexto extends Letra {
 
-    protected LetraTexto(char codigo) {
+    public LetraTexto(char codigo) {
         super(codigo);
     }
 
