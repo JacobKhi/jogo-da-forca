@@ -10,7 +10,7 @@ public interface PalavraRepository extends Repository {
 
     public Palavra[] getTodas();
 
-    public Palavra getPalavra(String palaString);
+    public Palavra getPalavra(String palavra);
 
     public void inserir(Palavra palavra) throws RepositoryException;
 
