@@ -1,5 +1,5 @@
 package main.java.br.edu.iff.forca.repository;
 
-public class Repository {
-    
+public interface Repository {
+    public long getProximoId();
 }
