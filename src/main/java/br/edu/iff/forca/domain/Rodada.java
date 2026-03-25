@@ -6,7 +6,7 @@ import main.java.br.edu.iff.forca.domain.letra.Letra;
 import main.java.br.edu.iff.forca.factory.grafico.BonecoFactory;
 
 public class Rodada extends ObjetoDominioImpl {
-    
+
     private Item[] itens;
     private Letra[] letrasErradas;
     private Jogador jogador;
@@ -16,7 +16,7 @@ public class Rodada extends ObjetoDominioImpl {
     private static int PONTOS_QUANDO_DESCOBRE_TODAS_AS_PALAVRAS = 100;
     private static int MAX_ERROS = 10;
     private static int MAX_PALAVRAS = 3;
-    
+
     public static BonecoFactory getBonecoFactory() {
         return bonecoFactory;
     }
@@ -56,7 +56,7 @@ public class Rodada extends ObjetoDominioImpl {
     public static void setMaxPalavras(int maxPalavras) {
         MAX_PALAVRAS = maxPalavras;
     }
-    
+
     public static Rodada criar(long id, Palavra[] palavras, Jogador jogador) {
         return new Rodada(id, palavras, jogador);
     }
@@ -68,7 +68,7 @@ public class Rodada extends ObjetoDominioImpl {
     private Rodada(long id, Palavra[] palavras, Jogador jogador) {
         super(id);
 
-        if (bonecoFactory == null) 
+        if (bonecoFactory == null)
             throw new IllegalStateException("O factory do jogador nao foi definido");
 
         validarPalavras(palavras);
@@ -80,7 +80,7 @@ public class Rodada extends ObjetoDominioImpl {
     private Rodada(long id, Item[] itens, Letra[] letrasErradas, Jogador jogador) {
         super(id);
 
-        if (bonecoFactory == null) 
+        if (bonecoFactory == null)
             throw new IllegalStateException("O factory do jogador nao foi definido");
 
         setItens(itens);
@@ -100,7 +100,7 @@ public class Rodada extends ObjetoDominioImpl {
         Palavra[] palavras = new Palavra[itens.length];
 
         for (int i = 0; i < palavras.length; i++) {
-            palavras[i] = itens[i].getPalavra();   
+            palavras[i] = itens[i].getPalavra();
         }
 
         return palavras;
@@ -111,13 +111,14 @@ public class Rodada extends ObjetoDominioImpl {
     }
 
     public void tentar(char codigo) {
-        if (encerrou()) 
+        if (encerrou())
             throw new IllegalStateException("O Jogo ja encerrou, voce nao pode mais tentar");
 
         boolean acertou = false;
 
         for (Item i : itens) {
-            if (i.tentar(codigo)) acertou = true;
+            if (i.tentar(codigo))
+                acertou = true;
         }
 
         if (!acertou) {
@@ -132,7 +133,7 @@ public class Rodada extends ObjetoDominioImpl {
     }
 
     public void arriscar(String[] palavras) {
-        if (encerrou()) 
+        if (encerrou())
             throw new IllegalStateException("O Jogo ja encerrou, voce nao pode mais arriscar");
 
         for (int i = 0; i < itens.length; i++) {
@@ -153,13 +154,13 @@ public class Rodada extends ObjetoDominioImpl {
     public void exibirBoneco(Object contexto) {
         bonecoFactory.getBoneco().exibir(contexto, getQtdeErros());
     }
-    
+
     public void exibirPalavras(Object contexto) {
         for (Item i : itens) {
             i.getPalavra().exibir(contexto);
         }
     }
-    
+
     public void exibirLetrasErradas(Object contexto) {
         for (Letra l : letrasErradas) {
             l.exibir(contexto);
@@ -174,7 +175,7 @@ public class Rodada extends ObjetoDominioImpl {
         }
 
         for (int i = 0; i < getErradas().length; i++) {
-            tentativas[getCertas().length + i] = getErradas()[i]; 
+            tentativas[getCertas().length + i] = getErradas()[i];
         }
 
         return tentativas;
@@ -195,15 +196,15 @@ public class Rodada extends ObjetoDominioImpl {
                         jaExiste = true;
                         break;
                     }
-                    
-                } 
+
+                }
                 if (!jaExiste) {
-                        letras[idx] = letraAtual;
-                        idx++;
-                }  
+                    letras[idx] = letraAtual;
+                    idx++;
+                }
             }
         }
-            
+
         return letras;
     }
 
@@ -212,7 +213,8 @@ public class Rodada extends ObjetoDominioImpl {
     }
 
     public int calcularPontos() {
-        if (!descobriu()) return 0;
+        if (!descobriu())
+            return 0;
 
         int pontos = PONTOS_QUANDO_DESCOBRE_TODAS_AS_PALAVRAS;
 
@@ -229,7 +231,8 @@ public class Rodada extends ObjetoDominioImpl {
 
     public boolean descobriu() {
         for (Item i : itens) {
-            if (!i.descobriu()) return false;
+            if (!i.descobriu())
+                return false;
         }
 
         return true;
@@ -237,7 +240,8 @@ public class Rodada extends ObjetoDominioImpl {
 
     public boolean arriscou() {
         for (Item i : itens) {
-            if (i.arriscou()) return true;
+            if (i.arriscou())
+                return true;
         }
 
         return false;
@@ -260,7 +264,7 @@ public class Rodada extends ObjetoDominioImpl {
     }
 
     private void setJogador(Jogador jogador) {
-        if (jogador == null) 
+        if (jogador == null)
             throw new IllegalArgumentException("O jogador nao pode ser nulo");
 
         this.jogador = jogador;
@@ -294,14 +298,18 @@ public class Rodada extends ObjetoDominioImpl {
     }
 
     private void setItens(Item[] itens) {
-        if (itens == null || itens.length == 0) 
+        if (itens == null || itens.length == 0)
             throw new IllegalArgumentException("A array nao pode ser nula nem vazia");
 
         this.itens = itens;
     }
 
+    public Item[] getItens() {
+        return Arrays.copyOf(itens, itens.length);
+    }
+
     private void setLetrasErradas(Letra[] letrasErradas) {
-        if (letrasErradas == null) 
+        if (letrasErradas == null)
             throw new IllegalArgumentException("O vetor de letras nao pode ser nulo");
 
         this.letrasErradas = letrasErradas;
