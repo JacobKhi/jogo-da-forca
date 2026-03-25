@@ -1,17 +1,18 @@
-package main.java.br.edu.iff.forca;
+package br.edu.iff.forca;
 
 import java.util.Scanner;
 
-import main.java.br.edu.iff.forca.domain.Item;
-import main.java.br.edu.iff.forca.domain.Jogador;
-import main.java.br.edu.iff.forca.domain.Rodada;
-import main.java.br.edu.iff.forca.domain.Tema;
-import main.java.br.edu.iff.forca.domain.letra.Letra;
-import main.java.br.edu.iff.forca.factory.JogadorFactory;
-import main.java.br.edu.iff.forca.factory.TemaFactory;
-import main.java.br.edu.iff.forca.repository.RepositoryException;
-import main.java.br.edu.iff.forca.service.PalavraAppService;
-import main.java.br.edu.iff.forca.service.RodadaAppService;
+import br.edu.iff.forca.domain.Item;
+import br.edu.iff.forca.domain.Jogador;
+import br.edu.iff.forca.domain.Palavra;
+import br.edu.iff.forca.domain.Rodada;
+import br.edu.iff.forca.domain.Tema;
+import br.edu.iff.forca.domain.letra.Letra;
+import br.edu.iff.forca.factory.JogadorFactory;
+import br.edu.iff.forca.factory.TemaFactory;
+import br.edu.iff.forca.repository.RepositoryException;
+import br.edu.iff.forca.service.PalavraAppService;
+import br.edu.iff.forca.service.RodadaAppService;
 
 public class Main {
 
@@ -90,7 +91,7 @@ public class Main {
             } else {
                 System.out.println("Que pena! Voce nao descobriu as palavras.");
                 System.out.print("As palavras eram: ");
-                for (main.java.br.edu.iff.forca.domain.Palavra p : rodada.getPalavras()) {
+                for (Palavra p : rodada.getPalavras()) {
                     System.out.print(p.toString() + " ");
                 }
                 System.out.println();

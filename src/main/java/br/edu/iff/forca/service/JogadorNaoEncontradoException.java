@@ -1,4 +1,4 @@
-package main.java.br.edu.iff.forca.service;
+package br.edu.iff.forca.service;
 
 public class JogadorNaoEncontradoException extends Exception {
     

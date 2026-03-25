@@ -1,7 +1,7 @@
-package main.java.br.edu.iff.forca.repository;
+package br.edu.iff.forca.repository;
 
-import main.java.br.edu.iff.forca.domain.Palavra;
-import main.java.br.edu.iff.forca.domain.Tema;
+import br.edu.iff.forca.domain.Palavra;
+import br.edu.iff.forca.domain.Tema;
 
 public interface PalavraRepository extends Repository {
     public Palavra getPorId(long id);

@@ -1,4 +1,4 @@
-package main.java.br.edu.iff.forca.domain.letra;
+package br.edu.iff.forca.domain.letra;
 
 public abstract class Letra {
     private char codigo;

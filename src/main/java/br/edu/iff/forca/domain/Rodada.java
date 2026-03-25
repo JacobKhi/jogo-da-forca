@@ -1,9 +1,9 @@
-package main.java.br.edu.iff.forca.domain;
+package br.edu.iff.forca.domain;
 
 import java.util.Arrays;
 
-import main.java.br.edu.iff.forca.domain.letra.Letra;
-import main.java.br.edu.iff.forca.factory.grafico.BonecoFactory;
+import br.edu.iff.forca.domain.letra.Letra;
+import br.edu.iff.forca.factory.grafico.BonecoFactory;
 
 public class Rodada extends ObjetoDominioImpl {
 
@@ -205,7 +205,7 @@ public class Rodada extends ObjetoDominioImpl {
             }
         }
 
-        return letras;
+        return Arrays.copyOf(letras, idx);
     }
 
     public Letra[] getErradas() {

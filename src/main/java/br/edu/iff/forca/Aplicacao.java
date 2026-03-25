@@ -1,23 +1,23 @@
-package main.java.br.edu.iff.forca;
+package br.edu.iff.forca;
 
-import main.java.br.edu.iff.forca.domain.Palavra;
-import main.java.br.edu.iff.forca.domain.Rodada;
-import main.java.br.edu.iff.forca.factory.JogadorFactory;
-import main.java.br.edu.iff.forca.factory.JogadorFactoryImpl;
-import main.java.br.edu.iff.forca.factory.PalavraFactory;
-import main.java.br.edu.iff.forca.factory.PalavraFactoryImpl;
-import main.java.br.edu.iff.forca.factory.RodadaFactory;
-import main.java.br.edu.iff.forca.factory.RodadaSorteioFactory;
-import main.java.br.edu.iff.forca.factory.TemaFactory;
-import main.java.br.edu.iff.forca.factory.TemaFactoryImpl;
-import main.java.br.edu.iff.forca.factory.grafico.BonecoFactory;
-import main.java.br.edu.iff.forca.factory.grafico.ElementoGraficoFactory;
-import main.java.br.edu.iff.forca.factory.grafico.ElementoGraficoTextoFactory;
-import main.java.br.edu.iff.forca.factory.grafico.LetraFactory;
-import main.java.br.edu.iff.forca.repository.RepositoryFactory;
-import main.java.br.edu.iff.forca.repository.memoria.MemoriaRepositoryFactory;
-import main.java.br.edu.iff.forca.service.PalavraAppService;
-import main.java.br.edu.iff.forca.service.RodadaAppService;
+import br.edu.iff.forca.domain.Palavra;
+import br.edu.iff.forca.domain.Rodada;
+import br.edu.iff.forca.factory.JogadorFactory;
+import br.edu.iff.forca.factory.JogadorFactoryImpl;
+import br.edu.iff.forca.factory.PalavraFactory;
+import br.edu.iff.forca.factory.PalavraFactoryImpl;
+import br.edu.iff.forca.factory.RodadaFactory;
+import br.edu.iff.forca.factory.RodadaSorteioFactory;
+import br.edu.iff.forca.factory.TemaFactory;
+import br.edu.iff.forca.factory.TemaFactoryImpl;
+import br.edu.iff.forca.factory.grafico.BonecoFactory;
+import br.edu.iff.forca.factory.grafico.ElementoGraficoFactory;
+import br.edu.iff.forca.factory.grafico.ElementoGraficoTextoFactory;
+import br.edu.iff.forca.factory.grafico.LetraFactory;
+import br.edu.iff.forca.repository.RepositoryFactory;
+import br.edu.iff.forca.repository.memoria.MemoriaRepositoryFactory;
+import br.edu.iff.forca.service.PalavraAppService;
+import br.edu.iff.forca.service.RodadaAppService;
 
 public class Aplicacao {
     

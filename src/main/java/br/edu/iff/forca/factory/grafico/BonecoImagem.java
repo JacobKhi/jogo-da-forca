@@ -1,4 +1,4 @@
-package main.java.br.edu.iff.forca.factory.grafico;
+package br.edu.iff.forca.factory.grafico;
 
 public class BonecoImagem implements Boneco{
 

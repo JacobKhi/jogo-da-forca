@@ -1,11 +1,11 @@
-package main.java.br.edu.iff.forca.repository.memoria;
+package br.edu.iff.forca.repository.memoria;
 
 import java.util.ArrayList;
 
-import main.java.br.edu.iff.forca.domain.Palavra;
-import main.java.br.edu.iff.forca.domain.Tema;
-import main.java.br.edu.iff.forca.repository.PalavraRepository;
-import main.java.br.edu.iff.forca.repository.RepositoryException;
+import br.edu.iff.forca.domain.Palavra;
+import br.edu.iff.forca.domain.Tema;
+import br.edu.iff.forca.repository.PalavraRepository;
+import br.edu.iff.forca.repository.RepositoryException;
 
 public class MemoriaPalavraRepository implements PalavraRepository {
 

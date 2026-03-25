@@ -1,10 +1,10 @@
-package main.java.br.edu.iff.forca.repository.memoria;
+package br.edu.iff.forca.repository.memoria;
 
-import main.java.br.edu.iff.forca.repository.JogadorRepository;
-import main.java.br.edu.iff.forca.repository.PalavraRepository;
-import main.java.br.edu.iff.forca.repository.RepositoryFactory;
-import main.java.br.edu.iff.forca.repository.RodadaRepository;
-import main.java.br.edu.iff.forca.repository.TemaRepository;
+import br.edu.iff.forca.repository.JogadorRepository;
+import br.edu.iff.forca.repository.PalavraRepository;
+import br.edu.iff.forca.repository.RepositoryFactory;
+import br.edu.iff.forca.repository.RodadaRepository;
+import br.edu.iff.forca.repository.TemaRepository;
 
 public class MemoriaRepositoryFactory implements RepositoryFactory{
 

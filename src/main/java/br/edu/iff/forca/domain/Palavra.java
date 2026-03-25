@@ -1,9 +1,9 @@
-package main.java.br.edu.iff.forca.domain;
+package br.edu.iff.forca.domain;
 
 import java.util.Arrays;
 
-import main.java.br.edu.iff.forca.domain.letra.Letra;
-import main.java.br.edu.iff.forca.factory.grafico.LetraFactory;
+import br.edu.iff.forca.domain.letra.Letra;
+import br.edu.iff.forca.factory.grafico.LetraFactory;
 
 public class Palavra extends ObjetoDominioImpl {
     

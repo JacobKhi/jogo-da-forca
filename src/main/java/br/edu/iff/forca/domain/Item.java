@@ -1,6 +1,6 @@
-package main.java.br.edu.iff.forca.domain;
+package br.edu.iff.forca.domain;
 
-import main.java.br.edu.iff.forca.domain.letra.Letra;
+import br.edu.iff.forca.domain.letra.Letra;
 
 public class Item extends ObjetoDominioImpl {
     

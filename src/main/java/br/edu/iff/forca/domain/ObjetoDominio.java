@@ -1,4 +1,4 @@
-package main.java.br.edu.iff.forca.domain;
+package br.edu.iff.forca.domain;
 
 public interface ObjetoDominio {
     public long getId();

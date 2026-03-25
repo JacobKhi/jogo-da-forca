@@ -1,4 +1,4 @@
-package main.java.br.edu.iff.forca.repository.bdr;
+package br.edu.iff.forca.repository.bdr;
 
 public class BDRRodadaRepository {
     

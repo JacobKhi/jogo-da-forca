@@ -1,11 +1,11 @@
-package main.java.br.edu.iff.forca.repository.memoria;
+package br.edu.iff.forca.repository.memoria;
 
 import java.util.ArrayList;
 
-import main.java.br.edu.iff.forca.domain.Jogador;
-import main.java.br.edu.iff.forca.domain.Rodada;
-import main.java.br.edu.iff.forca.repository.RepositoryException;
-import main.java.br.edu.iff.forca.repository.RodadaRepository;
+import br.edu.iff.forca.domain.Jogador;
+import br.edu.iff.forca.domain.Rodada;
+import br.edu.iff.forca.repository.RepositoryException;
+import br.edu.iff.forca.repository.RodadaRepository;
 
 public class MemoriaRodadaRepository implements RodadaRepository{
 

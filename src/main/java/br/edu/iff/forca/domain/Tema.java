@@ -1,4 +1,4 @@
-package main.java.br.edu.iff.forca.domain;
+package br.edu.iff.forca.domain;
 
 public class Tema extends ObjetoDominioImpl{
 
@@ -13,7 +13,7 @@ public class Tema extends ObjetoDominioImpl{
         return new Tema(id, nome);
     }
 
-    public static Tema recontruir(long id, String nome) {
+    public static Tema reconstituir(long id, String nome) {
         return new Tema(id, nome);
     }
 

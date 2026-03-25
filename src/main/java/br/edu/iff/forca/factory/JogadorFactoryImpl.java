@@ -1,8 +1,8 @@
-package main.java.br.edu.iff.forca.factory;
+package br.edu.iff.forca.factory;
 
-import main.java.br.edu.iff.forca.domain.Jogador;
-import main.java.br.edu.iff.forca.repository.JogadorRepository;
-import main.java.br.edu.iff.forca.repository.RepositoryException;
+import br.edu.iff.forca.domain.Jogador;
+import br.edu.iff.forca.repository.JogadorRepository;
+import br.edu.iff.forca.repository.RepositoryException;
 
 public class JogadorFactoryImpl extends EntityFactory implements JogadorFactory {
 

@@ -1,10 +1,10 @@
-package main.java.br.edu.iff.forca.factory;
+package br.edu.iff.forca.factory;
 
-import main.java.br.edu.iff.forca.domain.Jogador;
-import main.java.br.edu.iff.forca.domain.Rodada;
-import main.java.br.edu.iff.forca.repository.PalavraRepository;
-import main.java.br.edu.iff.forca.repository.RodadaRepository;
-import main.java.br.edu.iff.forca.repository.TemaRepository;
+import br.edu.iff.forca.domain.Jogador;
+import br.edu.iff.forca.domain.Rodada;
+import br.edu.iff.forca.repository.PalavraRepository;
+import br.edu.iff.forca.repository.RodadaRepository;
+import br.edu.iff.forca.repository.TemaRepository;
 
 public abstract class RodadaFactoryImpl extends EntityFactory implements RodadaFactory {
 

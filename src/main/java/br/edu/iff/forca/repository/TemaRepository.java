@@ -1,6 +1,6 @@
-package main.java.br.edu.iff.forca.repository;
+package br.edu.iff.forca.repository;
 
-import main.java.br.edu.iff.forca.domain.Tema;
+import br.edu.iff.forca.domain.Tema;
 
 public interface TemaRepository extends Repository {
     public Tema getPorId(long id);

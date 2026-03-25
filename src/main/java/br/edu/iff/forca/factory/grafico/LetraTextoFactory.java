@@ -1,7 +1,7 @@
-package main.java.br.edu.iff.forca.factory.grafico;
+package br.edu.iff.forca.factory.grafico;
 
-import main.java.br.edu.iff.forca.domain.letra.Letra;
-import main.java.br.edu.iff.forca.domain.letra.LetraTexto;
+import br.edu.iff.forca.domain.letra.Letra;
+import br.edu.iff.forca.domain.letra.LetraTexto;
 
 public class LetraTextoFactory extends LetraFactoryImpl {
 

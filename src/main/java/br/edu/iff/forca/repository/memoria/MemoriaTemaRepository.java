@@ -1,10 +1,10 @@
-package main.java.br.edu.iff.forca.repository.memoria;
+package br.edu.iff.forca.repository.memoria;
 
 import java.util.ArrayList;
 
-import main.java.br.edu.iff.forca.domain.Tema;
-import main.java.br.edu.iff.forca.repository.RepositoryException;
-import main.java.br.edu.iff.forca.repository.TemaRepository;
+import br.edu.iff.forca.domain.Tema;
+import br.edu.iff.forca.repository.RepositoryException;
+import br.edu.iff.forca.repository.TemaRepository;
 
 public class MemoriaTemaRepository implements TemaRepository {
     

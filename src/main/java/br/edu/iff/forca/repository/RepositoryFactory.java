@@ -1,4 +1,4 @@
-package main.java.br.edu.iff.forca.repository;
+package br.edu.iff.forca.repository;
 
 public interface RepositoryFactory {
     public TemaRepository getTemaRepository();

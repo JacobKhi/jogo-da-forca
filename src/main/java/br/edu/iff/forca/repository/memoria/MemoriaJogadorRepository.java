@@ -1,10 +1,10 @@
-package main.java.br.edu.iff.forca.repository.memoria;
+package br.edu.iff.forca.repository.memoria;
 
 import java.util.ArrayList;
 
-import main.java.br.edu.iff.forca.domain.Jogador;
-import main.java.br.edu.iff.forca.repository.JogadorRepository;
-import main.java.br.edu.iff.forca.repository.RepositoryException;
+import br.edu.iff.forca.domain.Jogador;
+import br.edu.iff.forca.repository.JogadorRepository;
+import br.edu.iff.forca.repository.RepositoryException;
 
 public class MemoriaJogadorRepository implements JogadorRepository{
 

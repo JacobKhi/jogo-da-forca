@@ -1,6 +1,6 @@
-package main.java.br.edu.iff.forca.repository;
+package br.edu.iff.forca.repository;
 
-import main.java.br.edu.iff.forca.domain.Jogador;
+import br.edu.iff.forca.domain.Jogador;
 
 public interface JogadorRepository extends Repository {
     public Jogador getPorId(long id);

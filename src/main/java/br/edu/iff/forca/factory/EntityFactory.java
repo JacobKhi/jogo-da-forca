@@ -1,6 +1,6 @@
-package main.java.br.edu.iff.forca.factory;
+package br.edu.iff.forca.factory;
 
-import main.java.br.edu.iff.forca.repository.Repository;
+import br.edu.iff.forca.repository.Repository;
 
 public abstract class EntityFactory {
     

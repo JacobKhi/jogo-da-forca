@@ -1,8 +1,8 @@
-package main.java.br.edu.iff.forca.factory;
+package br.edu.iff.forca.factory;
 
-import main.java.br.edu.iff.forca.domain.Tema;
-import main.java.br.edu.iff.forca.repository.RepositoryException;
-import main.java.br.edu.iff.forca.repository.TemaRepository;
+import br.edu.iff.forca.domain.Tema;
+import br.edu.iff.forca.repository.RepositoryException;
+import br.edu.iff.forca.repository.TemaRepository;
 
 public class TemaFactoryImpl extends EntityFactory implements TemaFactory {
 

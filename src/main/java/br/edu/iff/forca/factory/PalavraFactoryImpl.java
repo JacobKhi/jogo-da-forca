@@ -1,10 +1,10 @@
-package main.java.br.edu.iff.forca.factory;
+package br.edu.iff.forca.factory;
 
-import main.java.br.edu.iff.forca.domain.Palavra;
-import main.java.br.edu.iff.forca.domain.Tema;
-import main.java.br.edu.iff.forca.repository.PalavraRepository;
-import main.java.br.edu.iff.forca.repository.Repository;
-import main.java.br.edu.iff.forca.repository.RepositoryException;
+import br.edu.iff.forca.domain.Palavra;
+import br.edu.iff.forca.domain.Tema;
+import br.edu.iff.forca.repository.PalavraRepository;
+import br.edu.iff.forca.repository.Repository;
+import br.edu.iff.forca.repository.RepositoryException;
 
 public class PalavraFactoryImpl extends EntityFactory implements PalavraFactory {
 
