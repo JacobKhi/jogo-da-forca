@@ -6,11 +6,8 @@ import br.edu.iff.forca.domain.Item;
 import br.edu.iff.forca.domain.Jogador;
 import br.edu.iff.forca.domain.Palavra;
 import br.edu.iff.forca.domain.Rodada;
-import br.edu.iff.forca.domain.Tema;
 import br.edu.iff.forca.domain.letra.Letra;
 import br.edu.iff.forca.factory.JogadorFactory;
-import br.edu.iff.forca.factory.TemaFactory;
-import br.edu.iff.forca.repository.RepositoryException;
 import br.edu.iff.forca.service.PalavraAppService;
 import br.edu.iff.forca.service.RodadaAppService;
 
@@ -21,21 +18,7 @@ public class Main {
         Aplicacao app = Aplicacao.getSoleInstance();
         app.configurar();
 
-        TemaFactory temaFactory = app.getTemaFactory();
-        Tema t1 = temaFactory.getTema("Animais");
-        Tema t2 = temaFactory.getTema("Frutas");
-
-        PalavraAppService palavraService = PalavraAppService.getSoleInstance();
-        try {
-            palavraService.novaPalavra("gato", t1.getId());
-            palavraService.novaPalavra("cachorro", t1.getId());
-            palavraService.novaPalavra("papagaio", t1.getId());
-            palavraService.novaPalavra("banana", t2.getId());
-            palavraService.novaPalavra("manga", t2.getId());
-            palavraService.novaPalavra("abacaxi", t2.getId());
-        } catch (RepositoryException e) {
-            e.printStackTrace();
-        }
+        CsvLoader.carregar("palavras.csv", app.getTemaFactory(), PalavraAppService.getSoleInstance());
 
         JogadorFactory jogadorFactory = app.getJogadorFactory();
         Scanner scanner = new Scanner(System.in);
@@ -50,9 +33,10 @@ public class Main {
             Rodada rodada = rodadaService.novaRodada(jogador.getId());
 
             System.out.println("\n========== NOVA RODADA ==========");
-            System.out.println("Tema: " + rodada.getTema().getNome());
 
             while (!rodada.encerrou()) {
+                
+                System.out.println("Tema: " + rodada.getTema().getNome());
 
                 exibirBoneco(rodada.getQtdeErros());
 
